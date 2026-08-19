@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/img/banner.png" alt="Sarkari GPT Preview" width="900">
+  <img src="./public/assets/images/banner.png" alt="Sarkari GPT Preview" width="900">
 </p>
 
 <h1 align="center">
