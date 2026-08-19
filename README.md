@@ -424,13 +424,11 @@ Never commit API keys or private credentials to GitHub.
 Use environment variables for sensitive configuration:
 
 ```env
-AI_API_KEY=your_api_key_here
-```
+# GROK_API_KEY: Required for Grok/Groq AI responses via server-side proxy
+GROK_API_KEY="gsk_YOUR_GROK_OR_GROQ_API_KEY"
 
-For example:
-
-```env
-GROQ_API_KEY=your_api_key_here
+# APP_URL: The URL where this applet is hosted
+APP_URL="https://example.com"
 ```
 
 > Use the environment variable required by your application's AI provider configuration.
