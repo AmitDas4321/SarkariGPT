@@ -1,0 +1,6 @@
+{
+  "name": "Bharatiya AI Seva - SarkariGPT",
+  "description": "National AI Citizen Assistant portal replicating Bharatiya AI Seva (SarkariGPT) official government interface.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
