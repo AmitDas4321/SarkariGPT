@@ -11,9 +11,9 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/stars/AmitDas4321/Sarkari-GPT?style=for-the-badge">
-  <img src="https://img.shields.io/github/forks/AmitDas4321/Sarkari-GPT?style=for-the-badge">
-  <img src="https://img.shields.io/github/license/AmitDas4321/Sarkari-GPT?style=for-the-badge">
+  <img src="https://img.shields.io/github/stars/AmitDas4321/SarkariGPT?style=for-the-badge">
+  <img src="https://img.shields.io/github/forks/AmitDas4321/SarkariGPT?style=for-the-badge">
+  <img src="https://img.shields.io/github/license/AmitDas4321/SarkariGPT?style=for-the-badge">
 </p>
 
 <p align="center">
@@ -337,7 +337,7 @@ The project can be built and extended using modern web technologies such as:
 # 📁 Project Structure
 
 ```text
-Sarkari-GPT/
+SarkariGPT/
 │
 ├── public/
 │   └── assets/
@@ -368,13 +368,13 @@ Sarkari-GPT/
 Clone the repository:
 
 ```bash
-git clone https://github.com/AmitDas4321/Sarkari-GPT.git
+git clone https://github.com/AmitDas4321/SarkariGPT.git
 ```
 
 Enter the project directory:
 
 ```bash
-cd Sarkari-GPT
+cd SarkariGPT
 ```
 
 Install dependencies:
@@ -624,9 +624,9 @@ Contributions, suggestions, and improvements are welcome.
 A typical contribution workflow:
 
 ```bash
-git clone https://github.com/AmitDas4321/Sarkari-GPT.git
+git clone https://github.com/AmitDas4321/SarkariGPT.git
 
-cd Sarkari-GPT
+cd SarkariGPT
 
 npm install
 
