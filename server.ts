@@ -13,6 +13,15 @@ const PORT = Number(process.env.PORT) || 3000;
 
 app.use(express.json({ limit: '2mb' }));
 
+// GET /api/health endpoint
+app.get('/api/health', (_req: Request, res: Response) => {
+  res.status(200).json({
+    status: 'ok',
+    service: 'SarkariGPT',
+    timestamp: new Date().toISOString()
+  });
+});
+
 // POST /api/chat endpoint
 app.post('/api/chat', async (req: Request, res: Response) => {
   try {

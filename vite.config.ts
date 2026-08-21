@@ -9,6 +9,19 @@ function apiDevPlugin(): Plugin {
     name: 'api-dev-server',
     configureServer(server) {
       server.middlewares.use(async (req, res, next) => {
+        if (req.url === '/api/health' && req.method === 'GET') {
+          res.setHeader('Content-Type', 'application/json');
+          res.statusCode = 200;
+          res.end(
+            JSON.stringify({
+              status: 'ok',
+              service: 'SarkariGPT',
+              timestamp: new Date().toISOString()
+            })
+          );
+          return;
+        }
+
         if (req.url === '/api/chat' && req.method === 'POST') {
           let body = '';
           req.on('data', (chunk) => {
