@@ -326,7 +326,7 @@ async function getAvailableModels(baseUrl: string, apiKey: string): Promise<stri
       const data = await res.json();
       if (Array.isArray(data.data)) {
         const ids: string[] = data.data.map((m: any) => m.id);
-        // Exclude terms-gated models, audio, vision, guard, embedding models
+        // Exclude terms-gated models, audio, vision, guard, embedding, and low-context models
         const prioritized = ids.filter((id: string) => {
           const lower = id.toLowerCase();
           return (
@@ -339,7 +339,8 @@ async function getAvailableModels(baseUrl: string, apiKey: string): Promise<stri
             !lower.includes('guard') &&
             !lower.includes('vision') &&
             !lower.includes('moderation') &&
-            !lower.includes('playdialog')
+            !lower.includes('playdialog') &&
+            !lower.includes('allam')
           );
         });
 
@@ -404,6 +405,12 @@ export function cleanAiResponse(text: string): string {
     /\(Detailed bureaucratic response in English\/Hindi follows official NIC guidelines and authentication protocols\.\)/gi,
     ''
   );
+
+  // Normalize and clean markdown links
+  cleaned = cleaned.replace(/\\\[/g, '[').replace(/\\\]/g, ']').replace(/\\\(/g, '(').replace(/\\\)/g, ')');
+  cleaned = cleaned.replace(/<\[(https?:\/\/[^\]]+)\]>/g, '[$1]($1)');
+  cleaned = cleaned.replace(/<\[([^\]]+)\]\((https?:\/\/[^)]+)\)>/g, '[$1]($2)');
+  cleaned = cleaned.replace(/<(https?:\/\/[^\s>]+)>/g, '[$1]($1)');
 
   // Normalize newlines and trim whitespace
   cleaned = cleaned.replace(/\n{3,}/g, '\n\n').trim();
@@ -530,24 +537,29 @@ export async function handleChatRequest(body: ChatRequestBody): Promise<{
       const errorText = await response.text();
       console.warn(`Model ${model} returned status ${response.status}: ${errorText}`);
 
-      // If 404 or 400 model_not_found, proceed to try the next model candidate
-      if (response.status === 404 || response.status === 400) {
-        continue;
+      // Invalidate confirmed model if it failed with rate limit or error
+      if (confirmedWorkingModel === model) {
+        confirmedWorkingModel = null;
       }
 
-      // If unauthorized / quota reached, return friendly message
-      if (response.status === 401 || response.status === 403) {
+      // If 401 Unauthorized, the API key itself is invalid
+      if (response.status === 401) {
         return {
           success: false,
           error: 'प्रमाणीकरण त्रुटि (Authentication Error): API key अमान्य है।',
           refNumber
         };
       }
+
+      // For 429 (Rate limit / TPM exceeded), 400 (Context length exceeded), 404, 403, 500, 502, 503, 504:
+      // seamlessly fallback to the next candidate model
+      continue;
     } catch (err: any) {
       console.warn(`Error trying model ${model}:`, err?.message || err);
-      if (err.name === 'AbortError') {
-        continue;
+      if (confirmedWorkingModel === model) {
+        confirmedWorkingModel = null;
       }
+      continue;
     }
   }
 

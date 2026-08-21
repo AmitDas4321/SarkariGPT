@@ -54,6 +54,12 @@ export function cleanAiResponse(text: string): string {
     ''
   );
 
+  // Normalize and clean markdown links
+  cleaned = cleaned.replace(/\\\[/g, '[').replace(/\\\]/g, ']').replace(/\\\(/g, '(').replace(/\\\)/g, ')');
+  cleaned = cleaned.replace(/<\[(https?:\/\/[^\]]+)\]>/g, '[$1]($1)');
+  cleaned = cleaned.replace(/<\[([^\]]+)\]\((https?:\/\/[^)]+)\)>/g, '[$1]($2)');
+  cleaned = cleaned.replace(/<(https?:\/\/[^\s>]+)>/g, '[$1]($1)');
+
   // Normalize excessive blank lines and whitespace
   cleaned = cleaned.replace(/\n{3,}/g, '\n\n').trim();
 
