@@ -1,681 +1,305 @@
 <p align="center">
-  <img src="./public/assets/images/banner.png" alt="Sarkari GPT Preview" width="900">
+  <img src="./public/assets/images/banner.png" alt="SarkariGPT — Bharatiya AI Seva" width="920">
 </p>
 
 <h1 align="center">
-  🇮🇳 Sarkari GPT
+  🇮🇳 SarkariGPT
 </h1>
 
 <p align="center">
-  <strong>An AI-powered citizen assistant designed to make government services, schemes, documents, and public information easier to understand.</strong>
+  <strong>“What if ChatGPT were designed specifically for Indian citizens and government services?”</strong>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/stars/AmitDas4321/Sarkari-GPT?style=for-the-badge">
-  <img src="https://img.shields.io/github/forks/AmitDas4321/Sarkari-GPT?style=for-the-badge">
-  <img src="https://img.shields.io/github/license/AmitDas4321/Sarkari-GPT?style=for-the-badge">
+  An AI-powered citizen assistant inspired by classic Indian government web portals and modern AI — built to simplify schemes, documents, public procedures, and everyday civic queries in plain language.
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/AI-Powered-6366F1?style=flat-square">
-  <img src="https://img.shields.io/badge/Multilingual-Yes-4CAF50?style=flat-square">
-  <img src="https://img.shields.io/badge/Markdown-Supported-000000?style=flat-square&logo=markdown">
-  <img src="https://img.shields.io/badge/Responsive-Yes-2196F3?style=flat-square">
+  <a href="https://github.com/AmitDas4321/Sarkari-GPT/stargazers"><img src="https://img.shields.io/github/stars/AmitDas4321/Sarkari-GPT?style=for-the-badge&color=FF9933" alt="Stars"></a>
+  <a href="https://github.com/AmitDas4321/Sarkari-GPT/network/members"><img src="https://img.shields.io/github/forks/AmitDas4321/Sarkari-GPT?style=for-the-badge&color=138808" alt="Forks"></a>
+  <a href="https://github.com/AmitDas4321/Sarkari-GPT/blob/main/LICENSE"><img src="https://img.shields.io/github/license/AmitDas4321/Sarkari-GPT?style=for-the-badge&color=000080" alt="License"></a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/AI-Citizen%20Assistant-174A86?style=flat-square">
+  <img src="https://img.shields.io/badge/Multilingual-10%2B%20Languages-168A16?style=flat-square">
+  <img src="https://img.shields.io/badge/NIC%20Inspired-UI%20Experience-E8590C?style=flat-square">
+  <img src="https://img.shields.io/badge/Privacy-Zero%20PII%20Storage-2B8A3E?style=flat-square">
+  <img src="https://img.shields.io/badge/Production%20Ready-Fullstack%20Vite%2BNode-0C8599?style=flat-square">
 </p>
 
 ---
 
-# 🇮🇳 About
+## 🏛️ The Vision
 
-**Sarkari GPT** is an AI-powered citizen assistant developed and maintained by **BlueOrbit Devs**.
+Navigating public portals, citizen services, document procedures, and scheme rules can often be overwhelming. Circulars and portals are filled with complex bureaucratic terminology, scattered across hundreds of department websites.
 
-The project helps users understand government-related information, public services, documents, schemes, procedures, and common citizen queries through a simple conversational interface.
+**SarkariGPT** reimagines this experience:
 
-Instead of searching through complicated information, users can ask questions naturally and receive a clear, easy-to-understand response.
+> **What if an AI companion spoke your native language, understood the intricate workflows of Indian civic services, guided you step-by-step with verified official portal links, and was packaged inside a familiar, accessible portal design?**
 
-> **Ask naturally. Understand easily. Find the right direction.**
-
-Sarkari GPT is an **AI assistant** and is **not an official government department, government employee, government representative, or government service**.
+Developed by **BlueOrbit Devs**, SarkariGPT delivers instant clarity for citizens, students, farmers, professionals, and seniors alike.
 
 ---
 
-# ✨ Features
+## ⚠️ Important Public Disclaimer
 
-* 🇮🇳 Government-service assistance
-* 🤖 AI-powered conversational responses
-* 🌐 Multilingual support
-* 🇬🇧 English language support
-* 🇮🇳 Hindi language support
-* বাংলা Bengali language support
-* 🇸🇦 Arabic language support
-* 🗣️ Marathi language support
-* 🗣️ Tamil language support
-* 🗣️ Telugu language support
-* 🗣️ Gujarati language support
-* 🗣️ Punjabi language support
-* 🗣️ Urdu language support
-* 🪪 Aadhaar-related guidance
-* 💳 PAN-related guidance
-* 🏦 Banking and financial-service guidance
-* 📄 Document and application guidance
-* 🏛️ Government scheme guidance
-* 🔗 Official-service links when reliably known
-* 📝 Clean Markdown responses
-* 📱 Responsive user interface
-* ⚡ Fast conversational experience
-* 🔐 Sensitive-information protection
-* 🛡️ Anti-hallucination safeguards
-* 🚫 Fake-reference prevention
-* 🚫 Fake government-notice prevention
-* 💬 Natural conversational experience
+> **SarkariGPT is an independent educational and public-assistance AI tool developed by BlueOrbit Devs.**  
+> It is **NOT** affiliated with, endorsed by, or an official representative of the Government of India, any State Government, or any public department.  
+> 
+> * SarkariGPT does not issue certificates, process financial transactions, or access internal government databases.
+> * Users must never input sensitive credentials (such as full OTPs, passwords, ATM PINs, CVVs, or full Aadhaar OTP authentication secrets).
+> * Always verify official notifications and submit applications directly on the respective official government portals (`*.gov.in` / `*.nic.in`).
 
 ---
 
-# 🧠 How It Works
+## ✨ Key Capabilities
 
-Sarkari GPT follows a simple conversational workflow:
+| Feature | Description |
+| :--- | :--- |
+| 🇮🇳 **Civic & Scheme Intelligence** | Direct guidance on Aadhaar, PAN, Passport Seva, Income Tax e-Filing, DigiLocker, PM Kisan, EPF/UAN, GST, and State e-District portals. |
+| 🌐 **True Multilingual Fluency** | Automatically answers in the user's input language — English, Hindi (हिंदी), Bengali (বাংলা), Marathi (मराठी), Tamil (தமிழ்), Telugu (తెలుగు), Gujarati (ગુજરાતી), Punjabi (ਪੰਜਾਬੀ), Urdu (اردو), and Arabic (العربية). |
+| 📝 **Formatted Citizen Advisories** | Clean structured output with formatted headers, action steps, responsive comparison tables, and subtle deadline badges. |
+| 🔗 **Verified Official Links** | Connects users directly to authentic government domains (`incometax.gov.in`, `myaadhaar.uidai.gov.in`, `passportindia.gov.in`) with standard clickable Markdown links. |
+| 🛡️ **Anti-Hallucination & Anti-PII** | Strictly prevents fake reference numbers, fake document tracking IDs, or impersonation of government authorities. |
+| 📋 **Citizen Actions & Utilities** | One-click copy, printer-ready official advisory print formatting, pin conversations, and local encrypted history. |
+| ⚡ **Resilient AI Pipeline** | Intelligent multi-model fallback across high-throughput inference endpoints with automatic rate-limit recovery. |
+
+---
+
+## 🧠 How It Works
 
 ```text
-                    🇮🇳 Sarkari GPT
-                          │
-                          ▼
-                    👤 User Query
-                          │
-                          ▼
-                  🌐 Language Detection
-                          │
-                          ▼
-                    🤖 AI Processing
-                          │
-                          ▼
-              🛡️ Safety & Accuracy Rules
-                          │
-                          ▼
-                  📝 Markdown Formatting
-                          │
-                          ▼
-                    👤 User Response
+ ┌────────────────────────────────────────────────────────┐
+ │                    👤 Citizen Query                   │
+ │   "How do I link my PAN with Aadhaar before deadline?" │
+ └───────────────────────────┬────────────────────────────┘
+                             │
+                             ▼
+ ┌────────────────────────────────────────────────────────┐
+ │            🌐 Language & Intent Detection             │
+ │          (Detects script: English / Hindi / ...)       │
+ └───────────────────────────┬────────────────────────────┘
+                             │
+                             ▼
+ ┌────────────────────────────────────────────────────────┐
+ │               🛡️ Civic Guardrails & Safety            │
+ │   • Zero PII harvesting  • Prevent fake tracking IDs   │
+ │   • Direct to verified official service domains        │
+ └───────────────────────────┬────────────────────────────┘
+                             │
+                             ▼
+ ┌────────────────────────────────────────────────────────┐
+ │             ⚡ High-Speed Inference Engine             │
+ │    (Multi-tier model fallback with zero latency spike) │
+ └───────────────────────────┬────────────────────────────┘
+                             │
+                             ▼
+ ┌────────────────────────────────────────────────────────┐
+ │             📋 Structured Citizen Advisory             │
+ │      • Step-by-step procedure   • Official Portal URL  │
+ │      • Deadline notice badge    • Printable document   │
+ └────────────────────────────────────────────────────────┘
 ```
-
-The system is designed to:
-
-1. Understand the user's question.
-2. Detect the language of the latest message.
-3. Respond in the same language.
-4. Provide concise and useful information.
-5. Avoid fabricating official information.
-6. Protect sensitive user information.
-7. Provide relevant official links when reliably known.
 
 ---
 
-# 🌐 Multilingual Support
+## 💬 Real-World Interaction Examples
 
-Sarkari GPT is designed to respond in the same language used by the user.
+### 1. PAN-Aadhaar Linking Inquiry (English)
 
-| Language | Support |
-| -------- | :-----: |
-| English  |    ✅    |
-| Hindi    |    ✅    |
-| Bengali  |    ✅    |
-| Arabic   |    ✅    |
-| Marathi  |    ✅    |
-| Tamil    |    ✅    |
-| Telugu   |    ✅    |
-| Gujarati |    ✅    |
-| Punjabi  |    ✅    |
-| Urdu     |    ✅    |
-
-The assistant does not switch languages simply because the question is related to a specific country, government department, tax system, Aadhaar, PAN, UIDAI, or another government service.
-
----
-
-# 💬 Example
-
-### User
-
-```text
-Verify PAN card linking with Aadhaar
-```
-
-### Sarkari GPT
+> **Citizen:** How can I verify if my PAN card is linked with Aadhaar?
 
 ```markdown
-You can check your PAN-Aadhaar linking status through the
-Income Tax e-Filing portal.
+### Steps to Verify PAN-Aadhaar Linkage
 
-[Income Tax e-Filing Portal](https://www.incometax.gov.in/)
+1. Visit the official Income Tax e-Filing portal.
+2. Under the **Quick Links** section on the homepage, click on **Link Aadhaar Status**.
+3. Enter your 10-digit **PAN** and 12-digit **Aadhaar Number**.
+4. Click on **View Link Aadhaar Status**.
+
+🔗 [Income Tax e-Filing Portal](https://www.incometax.gov.in/iec/foportal/)
+
+> **Note:** If not linked, a nominal fee may apply under Section 234H through the official e-Pay Tax facility.
 ```
-
-The assistant is designed to provide useful guidance without creating fake government notices, reference numbers, or official-looking documents.
 
 ---
 
-# 🤖 AI Identity
+### 2. Aadhaar Mobile Update (हिंदी - Hindi)
 
-Sarkari GPT is developed and maintained by:
+> **नागरिक:** आधार कार्ड में नया मोबाइल नंबर कैसे लिंक करें?
 
-<p align="center">
-  <strong>BlueOrbit Devs</strong>
-</p>
+```markdown
+### आधार कार्ड में मोबाइल नंबर अपडेट करने की प्रक्रिया
 
-If a user asks:
+1. मोबाइल नंबर अपडेट के लिए बायोमेट्रिक सत्यापन अनिवार्य है, इसलिए किसी भी नजदीकी **आधार सेवा केंद्र (Aadhaar Seva Kendra)** पर जाना होगा।
+2. आप **UIDAI** के आधिकारिक पोर्टल से पहले ही ऑनलाइन अपॉइंटमेंट बुक कर सकते हैं।
+3. केंद्र पर जाकर आधार सुधार फॉर्म (Aadhaar Correction Form) जमा करें और बायोमेट्रिक ऑथेंटिकेशन पूरा करें।
+4. इसके लिए किसी अतिरिक्त दस्तावेज़ की आवश्यकता नहीं होती है।
 
-```text
-Who made you?
+🔗 [UIDAI Appointment Portal](https://appointments.uidai.gov.in/)
 ```
 
-Sarkari GPT responds:
+---
+
+### 3. Identity & Creator Questions
+
+> **Citizen:** Who created you? / तुम्हें किसने बनाया?
 
 ```text
 I was developed by BlueOrbit Devs.
-```
-
-The underlying AI provider or model technology is separate from the identity of Sarkari GPT.
-
-Sarkari GPT does **not** claim that an underlying AI provider created or owns the Sarkari GPT application.
-
----
-
-# 🛡️ Safety & Privacy
-
-Sarkari GPT includes safeguards designed to reduce unsafe, misleading, or fabricated information.
-
-The system does not intentionally generate:
-
-* Aadhaar numbers
-* PAN numbers
-* OTPs
-* Passwords
-* PINs
-* CVVs
-* Bank credentials
-* Authentication secrets
-* Fake government IDs
-* Fake application numbers
-* Fake case numbers
-* Fake reference numbers
-* Fake tracking numbers
-* Fake government notices
-* Fake advisory numbers
-
-Users should never share sensitive authentication information with the assistant.
-
-If an official website requires an OTP, password, PIN, CVV, or other sensitive information, users should enter it directly on the official website or application.
-
----
-
-# 🚫 No Fake Government Claims
-
-Sarkari GPT is designed **not to impersonate government authorities**.
-
-The system avoids generating labels such as:
-
-```text
-Official Answer
-Official Advisory
-Official Response
-Government Response
-Government Notice
-Department Notice
-Reference No
-Advisory No
-Case No
-```
-
-It also prevents fabricated identifiers such as:
-
-```text
-SAIS/2026/08/8119
-SAIS/2026/08/4796
-```
-
-This helps clearly distinguish AI-generated assistance from genuine government communications.
-
----
-
-# 🔗 Official Links
-
-When providing government-service links, Sarkari GPT prefers the relevant official government or service domain when reliably known.
-
-Links use standard Markdown syntax:
-
-```markdown
-[Income Tax e-Filing Portal](https://www.incometax.gov.in/)
-```
-
-The project avoids malformed formats such as:
-
-```text
-<https://example.com>
-```
-
-or:
-
-```text
-<[https://example.com]>
+(मुझे BlueOrbit Devs ने विकसित किया है।)
 ```
 
 ---
 
-# 📝 Response Formatting
+## 🌐 Supported Languages
 
-Sarkari GPT uses clean Markdown formatting suitable for modern Markdown renderers.
+SarkariGPT dynamically responds in the citizen's chosen language:
 
-Supported formatting includes:
-
-* Headings
-* Bold text
-* Bullet lists
-* Numbered lists
-* Tables
-* Markdown links
-* Inline code
-* Fenced code blocks
-
-Example:
-
-```markdown
-## How to Apply
-
-1. Open the official website.
-2. Select the required service.
-3. Enter the required information.
-4. Follow the instructions provided by the website.
-```
+| Language | Script / Native | Status |
+| :--- | :--- | :---: |
+| **English** | Latin | ✅ Full Support |
+| **Hindi** | हिन्दी (Devanagari) | ✅ Full Support |
+| **Bengali** | বাংলা (Eastern Nagari) | ✅ Full Support |
+| **Marathi** | मराठी (Devanagari) | ✅ Full Support |
+| **Tamil** | தமிழ் (Tamil) | ✅ Full Support |
+| **Telugu** | తెలుగు (Telugu) | ✅ Full Support |
+| **Gujarati** | ગુજરાતી (Gujarati) | ✅ Full Support |
+| **Punjabi** | ਪੰਜਾਬੀ (Gurmukhi) | ✅ Full Support |
+| **Urdu** | اردو (Perso-Arabic) | ✅ Full Support |
+| **Arabic** | العربية (Arabic) | ✅ Full Support |
 
 ---
 
-# 🧩 Core Principles
+## 🛠️ Technology Stack
 
-### 🎯 Direct
-
-Answer the user's actual question without unnecessary information.
-
-### 🌐 Multilingual
-
-Respect the language used by the user.
-
-### 🛡️ Safe
-
-Never request sensitive authentication information.
-
-### 📚 Informative
-
-Explain complicated information in a simple way.
-
-### 🔎 Accurate
-
-Avoid fabricating policies, procedures, deadlines, fees, or government information.
-
-### 🏛️ Non-Impersonating
-
-Never present AI-generated content as an official government communication.
-
-### 🔗 Reliable
-
-Prefer relevant official websites when their URLs are reliably known.
+- **Frontend:** React 19, TypeScript, Tailwind CSS, Lucide Icons, Vite
+- **Backend & API:** Node.js, Express, ESBuild bundler
+- **AI Inference Engine:** Groq / High-Speed Cloud Inference APIs with dynamic model failover
+- **Security & Markdown Engine:** Custom tokenizing parser with XSS sanitization, responsive tables, and inline badge detection
+- **Styling Architecture:** National Informatics Centre (NIC) inspired dual-tone theme, accessibility-compliant typography, mobile-responsive layout
 
 ---
 
-# 🛠️ Built With
-
-The project can be built and extended using modern web technologies such as:
-
-* React
-* TypeScript
-* JavaScript
-* Tailwind CSS
-* Vite
-* Node.js
-* AI API integration
-* Markdown rendering
-* REST APIs
-
----
-
-# 📁 Project Structure
+## 📁 Repository Structure
 
 ```text
 Sarkari-GPT/
-│
 ├── public/
-│   └── assets/
-│       └── images/
-│
+│   ├── assets/images/          # Emblems, national banner, branding assets
+│   └── favicon.ico
 ├── src/
+│   ├── api/
+│   │   └── chat-handler.ts     # AI chat pipeline, fallback system, prompts & sanitizer
 │   ├── components/
-│   ├── services/
-│   ├── utils/
-│   ├── App.tsx
-│   └── main.tsx
-│
-├── assets/
-│   └── img/
-│       └── banner.png
-│
-├── package.json
-├── README.md
-└── ...
+│   │   ├── Header.tsx          # NIC-style top government header & nav
+│   │   ├── Footer.tsx          # Portal footer, official disclaimers, links
+│   │   └── FormattedAiResponse.tsx # Markdown renderer, tables, link formatters
+│   ├── App.tsx                 # Core application layout, history state, chat view
+│   ├── main.tsx                # Client root mount
+│   └── index.css               # Tailwind utility classes & custom scrollbars
+├── server.ts                   # Express production static file & API proxy server
+├── vite.config.ts              # Vite bundling & dev server configuration
+├── package.json                # Project dependencies & build scripts
+└── README.md                   # Project documentation
 ```
-
-> The exact structure may vary depending on the current project version.
 
 ---
 
-# 🚀 Run Locally
+## 🚀 Quickstart & Installation
 
-Clone the repository:
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/AmitDas4321/Sarkari-GPT.git
-```
-
-Enter the project directory:
-
-```bash
 cd Sarkari-GPT
 ```
 
-Install dependencies:
+### 2. Install Dependencies
 
 ```bash
 npm install
 ```
 
-Create an environment file if required:
+### 3. Configure Environment Variables
 
-```text
-.env
+Create a `.env` file in the root directory:
+
+```env
+# Required: API key for Groq/Grok inference
+GROK_API_KEY=your_api_key_here
 ```
 
-Configure the required API settings according to your deployment setup.
+*(See `.env.example` for reference)*
 
-Start the development server:
+### 4. Run Development Server
 
 ```bash
 npm run dev
 ```
 
-Then open the local development URL displayed in your terminal.
+The app will be available at `http://localhost:3000`.
 
 ---
 
-# 🏗️ Production Build & Run
+## 🏗️ Production Build & Execution
 
-Create a production build (compiles client + backend into `dist/`):
+To bundle both the client and server into a production-ready `dist/` directory:
 
 ```bash
+# Build React client and bundle server.ts -> dist/server.js
 npm run build
-```
 
-Run the production server:
-
-```bash
+# Start production server
 npm start
 ```
 
-Preview frontend only:
+---
 
-```bash
-npm run preview
-```
+## 🔒 Security, Safety & Privacy Principles
+
+1. **No Sensitive PII Collection:** The assistant never requests or stores Aadhaar numbers, OTPs, PINs, passwords, or banking details.
+2. **Zero Impersonation:** The system explicitly identifies as an AI assistant developed by BlueOrbit Devs and refuses to generate fabricated government reference IDs or seals.
+3. **Transparent Official Direction:** Whenever actionable steps are required, citizens are directed to legitimate public web portals.
 
 ---
 
-# 🔐 Environment Variables
+## 🏢 About BlueOrbit Devs
 
-Never commit API keys or private credentials to GitHub.
-
-Use environment variables for sensitive configuration:
-
-```env
-AI_API_KEY=your_api_key_here
-```
-
-For example:
-
-```env
-GROQ_API_KEY=your_api_key_here
-```
-
-> Use the environment variable required by your application's AI provider configuration.
-
-For production deployments, configure secrets through your hosting provider's environment-variable settings.
-
----
-
-# ⚡ Development
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Start development:
-
-```bash
-npm run dev
-```
-
-Build:
-
-```bash
-npm run build
-```
-
-Preview:
-
-```bash
-npm run preview
-```
-
----
-
-# 🌍 Deployment
-
-Sarkari GPT can be deployed on platforms that support modern web applications.
-
-Possible deployment platforms include:
-
-* Vercel
-* Netlify
-* Cloudflare Pages
-* GitHub Pages for compatible static builds
-* VPS / Cloud Server
-* Docker-based hosting
-
-The exact deployment process depends on the project's frontend and backend configuration.
-
----
-
-# 📱 Responsive Design
-
-Sarkari GPT is designed to work across different screen sizes.
-
-| Device          | Support |
-| --------------- | :-----: |
-| Desktop         |    ✅    |
-| Laptop          |    ✅    |
-| Tablet          |    ✅    |
-| Mobile          |    ✅    |
-| Modern Browsers |    ✅    |
-
----
-
-# 🌎 Browser Support
-
-| Browser         | Support |
-| --------------- | :-----: |
-| Chrome          |    ✅    |
-| Edge            |    ✅    |
-| Firefox         |    ✅    |
-| Safari          |    ✅    |
-| Brave           |    ✅    |
-| Opera           |    ✅    |
-| Mobile Browsers |    ✅    |
-
----
-
-# 🔒 Security Recommendations
-
-When deploying Sarkari GPT:
-
-* Never expose API keys in frontend source code.
-* Store secrets in environment variables.
-* Never commit `.env` files containing real credentials.
-* Use HTTPS in production.
-* Restrict API access where possible.
-* Validate user input on the server.
-* Apply rate limiting to public APIs.
-* Keep dependencies updated.
-* Monitor application logs for suspicious activity.
-
-Recommended `.gitignore` entries:
-
-```gitignore
-node_modules/
-.env
-.env.local
-.env.production
-dist/
-```
-
----
-
-# 🧪 Example Questions
-
-Users can ask questions such as:
-
-```text
-How can I check my PAN Aadhaar linking status?
-```
-
-```text
-आधार कार्ड में मोबाइल नंबर कैसे अपडेट करें?
-```
-
-```text
-প্যান কার্ডের সঙ্গে আধার লিঙ্ক হয়েছে কিনা কীভাবে দেখব?
-```
-
-```text
-How can I apply for a government certificate?
-```
-
-```text
-What documents are required for this government service?
-```
-
-The assistant responds according to the language and context of the user's latest message.
-
----
-
-# 🏢 BlueOrbit Devs
-
-**BlueOrbit Devs** is the development organization behind Sarkari GPT.
-
-The organization focuses on building:
-
-* AI-powered applications
-* Modern web applications
-* Developer tools
-* Digital platforms
-* Open-source projects
-* Creative software experiences
+**BlueOrbit Devs** is an independent software development collective dedicated to building intelligent, accessible, and high-impact digital experiences for developers and everyday users worldwide.
 
 <p align="center">
   <a href="https://blueorbitdevs.org">
-    <img src="https://img.shields.io/badge/BlueOrbit%20Devs-Website-0A66C2?style=for-the-badge">
+    <img src="https://img.shields.io/badge/BlueOrbit%20Devs-Official%20Site-0A66C2?style=for-the-badge&logo=google-chrome&logoColor=white" alt="BlueOrbit Devs">
   </a>
 </p>
 
 ---
 
-# 👨‍💻 Author
+## 👨‍💻 Author & Maintainer
 
 <p align="center">
   <a href="https://github.com/AmitDas4321">
-    <img src="https://github.com/AmitDas4321.png" width="140" alt="Amit Das">
+    <img src="https://github.com/AmitDas4321.png" width="120" style="border-radius: 50%;" alt="Amit Das">
   </a>
 </p>
 
 <p align="center">
   <b>Amit Das</b><br>
-  Full Stack Developer<br>
-  BlueOrbit Devs
-</p>
-
-<p align="center">
-  <a href="https://github.com/AmitDas4321">
-    <img src="https://img.shields.io/badge/GitHub-AmitDas4321-181717?style=for-the-badge&logo=github">
-  </a>
+  <i>Full Stack & AI Engineer • BlueOrbit Devs</i><br>
+  <a href="https://github.com/AmitDas4321"><img src="https://img.shields.io/badge/GitHub-AmitDas4321-181717?style=flat-square&logo=github" alt="GitHub"></a>
 </p>
 
 ---
 
-# ⭐ Support
+## 📜 License
 
-If you find **Sarkari GPT** useful, consider giving the repository a ⭐ on GitHub.
-
-Your support helps encourage the development of more open-source projects, AI applications, and useful digital tools.
-
----
-
-# 🤝 Contributing
-
-Contributions, suggestions, and improvements are welcome.
-
-A typical contribution workflow:
-
-```bash
-git clone https://github.com/AmitDas4321/Sarkari-GPT.git
-
-cd Sarkari-GPT
-
-npm install
-
-npm run dev
-```
-
-Create a new branch for your changes:
-
-```bash
-git checkout -b feature/your-feature
-```
-
-After making your changes:
-
-```bash
-git add .
-git commit -m "Add your feature"
-git push origin feature/your-feature
-```
-
-Then open a Pull Request on GitHub.
-
----
-
-# 📜 License
-
-This project is licensed under the **MIT License**.
-
-See the `LICENSE` file for more information.
+This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
 <p align="center">
-
-### 🇮🇳🤖
-
-*"Making information simpler, one question at a time."*
-
-</p>
-
----
-
-<p align="center">
-  <b>Made with ❤️ by <a href="https://blueorbitdevs.org">BlueOrbit Devs</a></b><br>
-  <a href="https://github.com/AmitDas4321">GitHub</a>
+  <b>🇮🇳 Built with passion by <a href="https://blueorbitdevs.org">BlueOrbit Devs</a></b><br>
+  <i>Empowering citizens with plain-language access to public information.</i>
 </p>
