@@ -200,6 +200,7 @@ Sarkari-GPT/
 │   ├── main.tsx                # Client root mount
 │   └── index.css               # Tailwind utility classes & custom scrollbars
 ├── server.ts                   # Express production static file & API proxy server
+├── ecosystem.config.cjs        # PM2 process manager production configuration
 ├── vite.config.ts              # Vite bundling & dev server configuration
 ├── package.json                # Project dependencies & build scripts
 └── README.md                   # Project documentation
@@ -229,6 +230,9 @@ Create a `.env` file in the root directory:
 ```env
 # Required: API key for Groq/Grok inference
 GROK_API_KEY=your_api_key_here
+
+# Optional: Application name for PM2
+APP_NAME=SarkariGPT
 ```
 
 *(See `.env.example` for reference)*
@@ -245,14 +249,74 @@ The app will be available at `http://localhost:3000`.
 
 ## 🏗️ Production Build & Execution
 
+### Standard Execution
+
 To bundle both the client and server into a production-ready `dist/` directory:
 
 ```bash
-# Build React client and bundle server.ts -> dist/server.js
+# 1. Build React client and compile server.ts -> dist/server.js
 npm run build
 
-# Start production server
+# 2. Start production server directly with Node.js
 npm start
+```
+
+---
+
+## ⚡ Production Deployment with PM2 (`ecosystem.config.cjs`)
+
+For zero-downtime production environments, background execution, and automated restarts on failure, deploy using **PM2** and the included `ecosystem.config.cjs`:
+
+### 1. Build the Production Bundle
+
+```bash
+npm run build
+```
+
+### 2. Start with PM2
+
+```bash
+# Install PM2 globally (if not already installed)
+npm install -g pm2
+
+# Start SarkariGPT using the ecosystem configuration
+pm2 start ecosystem.config.cjs
+```
+
+### 3. Useful PM2 Commands
+
+| Action | Command |
+| :--- | :--- |
+| **Check Process Status** | `pm2 status` |
+| **View Live Logs** | `pm2 logs SarkariGPT` |
+| **Restart Application** | `pm2 restart ecosystem.config.cjs` |
+| **Reload with Zero Downtime** | `pm2 reload ecosystem.config.cjs` |
+| **Stop Application** | `pm2 stop SarkariGPT` |
+| **Enable Startup on Boot** | `pm2 startup && pm2 save` |
+
+---
+
+## 🩺 Health Check API (`GET /api/health`)
+
+SarkariGPT includes a built-in health check endpoint for uptime monitors, load balancers, and Docker/Kubernetes probes:
+
+- **Endpoint:** `GET /api/health`
+- **Response Code:** `200 OK`
+
+### Example Request
+
+```bash
+curl -X GET http://localhost:3000/api/health
+```
+
+### Example Response
+
+```json
+{
+  "status": "ok",
+  "service": "SarkariGPT",
+  "timestamp": "2026-08-21T09:30:45.000Z"
+}
 ```
 
 ---
