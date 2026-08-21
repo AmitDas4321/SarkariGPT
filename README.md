@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./public/assets/images/banner.png" alt="Sarkari GPT Preview" width="900">
+  <img src="./assets/img/banner.png" alt="Sarkari GPT Preview" width="900">
 </p>
 
 <h1 align="center">
@@ -11,9 +11,9 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/stars/AmitDas4321/SarkariGPT?style=for-the-badge">
-  <img src="https://img.shields.io/github/forks/AmitDas4321/SarkariGPT?style=for-the-badge">
-  <img src="https://img.shields.io/github/license/AmitDas4321/SarkariGPT?style=for-the-badge">
+  <img src="https://img.shields.io/github/stars/AmitDas4321/Sarkari-GPT?style=for-the-badge">
+  <img src="https://img.shields.io/github/forks/AmitDas4321/Sarkari-GPT?style=for-the-badge">
+  <img src="https://img.shields.io/github/license/AmitDas4321/Sarkari-GPT?style=for-the-badge">
 </p>
 
 <p align="center">
@@ -337,7 +337,7 @@ The project can be built and extended using modern web technologies such as:
 # 📁 Project Structure
 
 ```text
-SarkariGPT/
+Sarkari-GPT/
 │
 ├── public/
 │   └── assets/
@@ -368,13 +368,13 @@ SarkariGPT/
 Clone the repository:
 
 ```bash
-git clone https://github.com/AmitDas4321/SarkariGPT.git
+git clone https://github.com/AmitDas4321/Sarkari-GPT.git
 ```
 
 Enter the project directory:
 
 ```bash
-cd SarkariGPT
+cd Sarkari-GPT
 ```
 
 Install dependencies:
@@ -401,15 +401,21 @@ Then open the local development URL displayed in your terminal.
 
 ---
 
-# 🏗️ Production Build
+# 🏗️ Production Build & Run
 
-Create a production build:
+Create a production build (compiles client + backend into `dist/`):
 
 ```bash
 npm run build
 ```
 
-Preview the production build:
+Run the production server:
+
+```bash
+npm start
+```
+
+Preview frontend only:
 
 ```bash
 npm run preview
@@ -424,11 +430,13 @@ Never commit API keys or private credentials to GitHub.
 Use environment variables for sensitive configuration:
 
 ```env
-# GROK_API_KEY: Required for Grok/Groq AI responses via server-side proxy
-GROK_API_KEY="gsk_YOUR_GROK_OR_GROQ_API_KEY"
+AI_API_KEY=your_api_key_here
+```
 
-# APP_URL: The URL where this applet is hosted
-APP_URL="https://example.com"
+For example:
+
+```env
+GROQ_API_KEY=your_api_key_here
 ```
 
 > Use the environment variable required by your application's AI provider configuration.
@@ -622,9 +630,9 @@ Contributions, suggestions, and improvements are welcome.
 A typical contribution workflow:
 
 ```bash
-git clone https://github.com/AmitDas4321/SarkariGPT.git
+git clone https://github.com/AmitDas4321/Sarkari-GPT.git
 
-cd SarkariGPT
+cd Sarkari-GPT
 
 npm install
 

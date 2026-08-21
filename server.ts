@@ -1,5 +1,6 @@
 import express, { Request, Response } from 'express';
 import path from 'path';
+import fs from 'fs';
 import { fileURLToPath } from 'url';
 import 'dotenv/config';
 import { handleChatRequest } from './src/api/chat-handler';
@@ -27,10 +28,15 @@ app.post('/api/chat', async (req: Request, res: Response) => {
 });
 
 // Serve static frontend in production
-app.use(express.static(path.join(__dirname, 'dist')));
+// Handle both running from root and running inside dist/
+const staticDir = fs.existsSync(path.join(__dirname, 'index.html'))
+  ? __dirname
+  : path.join(__dirname, 'dist');
+
+app.use(express.static(staticDir));
 
 app.get('*', (req: Request, res: Response) => {
-  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+  res.sendFile(path.join(staticDir, 'index.html'));
 });
 
 app.listen(PORT, '0.0.0.0', () => {
